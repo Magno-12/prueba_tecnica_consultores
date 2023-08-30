@@ -1,0 +1,1 @@
+from apps.property_management.models.predio import Predio
