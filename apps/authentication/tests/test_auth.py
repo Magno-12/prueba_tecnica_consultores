@@ -10,7 +10,6 @@ class AuthIntegrationTest(TransactionTestCase):
     def setUp(self):
         self.client = Client()
 
-        # Create a test user
         self.user_data = {
             'email': 'test@example.com',
             'username': 'testuser',
@@ -50,19 +49,16 @@ class AuthIntegrationTest(TransactionTestCase):
         self.assertEqual(response.status_code, 400)
 
     def test_logout_successful(self):
-        # First login the user
         login_response = self.client.post('/auth/login/', {
             'email': self.user_data['email'],
             'password': self.user_data['password']
         })
         self.assertEqual(login_response.status_code, 200)  # Ensure login was successful
 
-        # Then attempt to logout
         response = self.client.post('/auth/logout/', {
             'access_token': login_response.data['access']
         })
         self.assertEqual(response.status_code, 200)
-
 
     def test_logout_without_active_session(self):
         response = self.client.post('/auth/logout/')
