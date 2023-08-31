@@ -94,8 +94,8 @@ DATABASES = {
         'NAME': 'prueba_tecnica',
         'USER': 'postgres',
         'PASSWORD': '1212',
-        'HOST': 'localhost',
-        'PORT': '5434',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 

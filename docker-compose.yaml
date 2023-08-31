@@ -9,7 +9,8 @@ services:
       - POSTGRES_DB=prueba_tecnica
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=1212
-
+    ports:
+      - "5434:5432"
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
