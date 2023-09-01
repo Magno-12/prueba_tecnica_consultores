@@ -4,10 +4,11 @@ Este proyecto es una aplicación web para la gestión de predios construida con 
 
 ------
 ### Contenido
-- Requisitos previos
-- Configuración inicial
-- Configuración con Docker
-- Pruebas en Postman
+- ![Requisitos previos](#requisitos-previos)
+- ![Configuración inicial](#configuración-inicial)
+- ![Configuración con Docker](#configuración-con-docker)
+- ![Pruebas en Postman](#pruebas-en-postman)
+- ![Ejecución de Tests](#ejecución-de-tests)
 
 ------
 ### Requisitos previos
@@ -82,3 +83,10 @@ Endpoints:
 - Clave: file y nombre file, y sube un archivo .json.
 
 ![image](https://github.com/Magno-12/prueba_tecnica_consultores/assets/66977118/608b2921-980a-4fd7-8e39-208588e1e57d)
+
+-----
+## Ejecución de Tests
+1. Asegúrate de que los contenedores de Docker estén en ejecución.
+2. Ejecuta los tests usando el siguiente comando:
+
+- docker-compose exec web coverage run manage.py test
