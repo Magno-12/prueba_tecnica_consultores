@@ -4,7 +4,7 @@ Este proyecto es una aplicación web para la gestión de predios construida con 
 
 ------
 ### Contenido
-- ![Requisitos previos](#requisitos-previos)
+- (#requisitos-previos)
 - ![Configuración inicial](#configuración-inicial)
 - ![Configuración con Docker](#configuración-con-docker)
 - ![Pruebas en Postman](#pruebas-en-postman)
