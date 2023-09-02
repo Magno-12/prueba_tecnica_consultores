@@ -90,3 +90,7 @@ Endpoints:
 2. Ejecuta los tests usando el siguiente comando:
 
 - docker-compose exec web coverage run manage.py test
+
+-----
+## Swagger para ver los endpoint en detalle: 
+- http://localhost:8000/swagger/
